@@ -208,4 +208,3 @@ double MLArray::max() const {
     return *std::max_element(tmp, endTmp);
 }
 
-

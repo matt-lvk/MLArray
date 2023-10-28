@@ -10,6 +10,7 @@
 
 #ifdef USE_VAL_ARRAY
 #include <valarray>
+#include <iostream>
 typedef std::valarray<double> MLArray;
 #else
 
