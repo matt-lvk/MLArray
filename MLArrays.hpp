@@ -2,7 +2,7 @@
 //  MLArrays.hpp
 //  MLArray
 //
-//  Created by Matthew liew on 28.10.23.
+//  Created by Matthew liew on 17.08.23.
 //
 
 #ifndef MLArrays_hpp
@@ -21,7 +21,8 @@ public:
     
     MLArray& operator=(const MLArray& original);
     MLArray& operator=(const double& val);
-    
+    void resize(unsigned long newSize);
+
     // overload operands
     MLArray& operator+=(const MLArray& operand);
     MLArray& operator-=(const MLArray& operand);
@@ -39,8 +40,6 @@ public:
     inline double& operator[](unsigned long i);
     
     inline unsigned long size() const;
-    
-    void resize(unsigned long newSize);
     
     double sum() const;
     double min() const;
